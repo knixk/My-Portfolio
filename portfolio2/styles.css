@@ -25,7 +25,8 @@ main > img {
   color: white;
   background-color: white;
   border-radius: 10px;
-  /* float: clear; */
+  float: left;
+  margin: 0 20px 20px 0;
 }
 
 ul {
