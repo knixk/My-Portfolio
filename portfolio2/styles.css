@@ -22,7 +22,11 @@ nav {
     text-align: center;
     text-transform: lowercase;
     /* border-radius: 5px; */
-    /* background-color: plum; */
+    background-color: plum;
+}
+
+main {
+    /* background-color: red; */
 }
 
 main, footer {
@@ -31,13 +35,15 @@ main, footer {
 
 .right > img {
     border-radius: 20px;
-    border: 2px solid #c7c7c7;
+    /* border: 2px solid #333; */
+    width: 120px;
 }
 
 .flex {
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: center;
     align-items: center;
-    gap: 10%;
+    gap: 6%;
+    margin-top: 10%;
 
 }
