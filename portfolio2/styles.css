@@ -1,15 +1,16 @@
 * {
-    border: 1px solid plum;
+    /* border: 1px solid plum; */
     /* margin: 0; */
     padding: 0;
 }
 
-footer > ul {
+footer > .content > ul {
     display: flex;
     gap: 10px;
+
 }
 
-footer > ul > li {
+footer > .content > ul > li {
     list-style-type:none;
     margin-bottom: 5px;
 }
@@ -20,6 +21,8 @@ body {
     color: #333;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+
 
 nav {
     padding: 0.5rem;
@@ -33,8 +36,8 @@ main {
     /* background-color: red; */
 }
 
-main, footer {
-    margin: 0 10vw 0 25vw;
+main, .content {
+    margin: 0 20vw 0 25vw;
 }
 
 .right > img {
@@ -46,7 +49,7 @@ main, footer {
 .flex {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    /* align-items: start; */
     gap: 10%;
     margin-top: 10%;
 
@@ -58,18 +61,53 @@ main, footer {
     margin-bottom: 5px;
 }
 
-body > footer > ul > li > a {
+/* body > footer > .content > ul > li > a {
     text-decoration: none;
+    color: white;
+} */
+
+.content > h2 {
+    margin: 0;
 }
 
-@media screen and (max-width: 407px) {
+footer {
+    background-color: #333;
+    margin: 3% 0 0 0;
+
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content > * {
+    color: white;
+}
+
+body > footer > div > div.left > ul > li {
+    list-style-type: none;
+}
+
+body > footer > div > div.left > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 489px) {
     .flex {
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
     main, footer {
         margin: 0 15vw;
+    }
+
+    footer > ul {
+        flex-direction: column;
     }
     
   }
