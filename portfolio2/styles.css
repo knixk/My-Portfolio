@@ -1,5 +1,5 @@
 * {
-    border: 1px solid plum;
+    /* border: 1px solid red; */
     /* margin: 0; */
     padding: 0;
 }
@@ -25,10 +25,15 @@ body {
 
 
 nav {
-    padding: 0.5rem;
-    text-align: center;
+    padding: 0.5rem 0;
+    text-align: start;
     text-transform: lowercase;
     background-color: plum;
+}
+
+nav > h3 {
+    color: #333;
+    margin-left: 25vw;
 }
 
 main, .content {
@@ -60,7 +65,8 @@ main, .content {
 
 footer {
     background-color: #333;
-    margin: 7% 0 0 0;
+    margin: 4% 0 0 0;
+    padding: 3% 0 5% 0;
 
 }
 
@@ -92,6 +98,17 @@ body > footer > div > div.left > ul > li {
     margin-bottom: 10px;
 }
 
+.resume {
+    background-color: plum;
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 0 0 0;
+    border-radius: 5px;
+}
+
+
 @media screen and (max-width: 489px) {
 
     footer > .content {
@@ -99,6 +116,13 @@ body > footer > div > div.left > ul > li {
         gap: 4vw;
     }
 
+}
 
+  @media screen and (max-width: 837px) {
 
-  }
+    body > footer > div > div.left > ul {
+        flex-direction: column;
+    }
+    
+
+}
