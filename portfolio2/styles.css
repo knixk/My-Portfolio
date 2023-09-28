@@ -116,6 +116,11 @@ body > footer > div > div.left > ul > li {
         gap: 4vw;
     }
 
+    main {
+        margin: 0 15px;
+        text-align: start;
+    }
+
 }
 
   @media screen and (max-width: 837px) {
