@@ -1,5 +1,5 @@
 * {
-    /* border: 1px solid red; */
+    /* border: 1px solid purple; */
     /* margin: 0; */
     padding: 0;
 }
@@ -18,6 +18,7 @@ footer > .content > ul > li {
 body {
     margin: 0;
     background-color: #e6e6e6;
+    min-height: 100vh;
     color: #333;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -36,12 +37,17 @@ nav > h3 {
     margin-left: 25vw;
 }
 
-main, .content {
+main, .content  {
     margin: 0 20vw 0 25vw;
+}
+
+main {
+    min-height: 70vh;
 }
 
 .right > img {
     border-radius: 20px;
+    padding-top: 10px;
     width: 100px;
 }
 
@@ -59,12 +65,13 @@ main, .content {
     margin-bottom: 5px;
 }
 
-.content > h2 {
+body > footer > div > div.left > h2 {
     margin: 0;
 }
 
 footer {
     background-color: #333;
+    /* position: sticky; */
     margin: 4% 0 0 0;
     padding: 3% 0 5% 0;
 
@@ -108,6 +115,9 @@ body > footer > div > div.left > ul > li {
     border-radius: 5px;
 }
 
+body {
+}
+
 
 @media screen and (max-width: 489px) {
 
@@ -123,7 +133,7 @@ body > footer > div > div.left > ul > li {
 
 }
 
-  @media screen and (max-width: 837px) {
+  @media screen and (max-width: 866px) {
 
     body > footer > div > div.left > ul {
         flex-direction: column;
