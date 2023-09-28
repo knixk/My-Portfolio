@@ -1,5 +1,5 @@
 * {
-    /* border: 1px solid plum; */
+    border: 1px solid plum;
     /* margin: 0; */
     padding: 0;
 }
@@ -83,11 +83,22 @@ body > footer > div > div.left > ul > li > a {
     color: white;
 }
 
+body > footer > div > div.left > ul {
+    display: flex;
+    gap: 10px;
+}
+
+body > footer > div > div.left > ul > li {
+    margin-bottom: 10px;
+}
+
 @media screen and (max-width: 489px) {
 
     footer > .content {
         flex-direction: column;
         gap: 4vw;
     }
+
+
 
   }
