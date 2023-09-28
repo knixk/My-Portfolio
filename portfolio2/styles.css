@@ -28,12 +28,7 @@ nav {
     padding: 0.5rem;
     text-align: center;
     text-transform: lowercase;
-    /* border-radius: 5px; */
     background-color: plum;
-}
-
-main {
-    /* background-color: red; */
 }
 
 main, .content {
@@ -42,14 +37,12 @@ main, .content {
 
 .right > img {
     border-radius: 20px;
-    /* border: 2px solid #333; */
     width: 100px;
 }
 
 .flex {
     display: flex;
     justify-content: flex-start;
-    /* align-items: start; */
     gap: 10%;
     margin-top: 10%;
 
@@ -61,18 +54,13 @@ main, .content {
     margin-bottom: 5px;
 }
 
-/* body > footer > .content > ul > li > a {
-    text-decoration: none;
-    color: white;
-} */
-
 .content > h2 {
     margin: 0;
 }
 
 footer {
     background-color: #333;
-    margin: 3% 0 0 0;
+    margin: 7% 0 0 0;
 
 }
 
@@ -96,18 +84,10 @@ body > footer > div > div.left > ul > li > a {
 }
 
 @media screen and (max-width: 489px) {
-    .flex {
+
+    footer > .content {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        gap: 4vw;
     }
 
-    main, footer {
-        margin: 0 15vw;
-    }
-
-    footer > ul {
-        flex-direction: column;
-    }
-    
   }
