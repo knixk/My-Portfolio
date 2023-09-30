@@ -54,9 +54,16 @@ main {
 .flex {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
     gap: 10%;
     margin-top: 10%;
 
+}
+
+#hammer {
+    padding: 10px;
+    width: 150px;
 }
 
 .list > li {
@@ -111,7 +118,7 @@ body > footer > div > div.left > ul > li {
     color: #333;
     text-decoration: none;
     padding: 10px;
-    margin: 10px 0 0 0;
+    margin: 20px 0 0 0;
     border-radius: 5px;
 }
 
@@ -153,5 +160,26 @@ body {
         margin-top: 20px;
     }
 
+    .flex {
+        /* align-items: center; */
+        justify-content: start;
+    }
 
+
+}
+
+
+.floating { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 10px); }
+    100%   { transform: translate(0, -0px); }   
 }
